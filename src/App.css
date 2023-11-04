@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@400;700&family=Unbounded:wght@200;400;600;900&display=swap');
+
 *{
   box-sizing: border-box;
   padding: 0;
@@ -7,6 +9,7 @@
 body{
   background-color: 
   #12191d;
+  font-family: 'Poppins', sans-serif;
 }
 
 .sidebar{
@@ -28,7 +31,7 @@ body{
 }
 
 .side-links{
-  height: 30vh;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -59,16 +62,23 @@ a{
 .side-profile{
   width: 50px;
   border-radius: 50%;
+  transition-duration: 0.3s;
 }
 
 #sl-label{
   padding-left: 10px;
   font-size: 1.2rem;
+  transition-duration: 0.3s;
+  width: 100%;
+}
+#sl-label:hover{
+  padding-left: 40px;
 }
 
 #side-title a span{
   font-size: 1.5rem;
   padding-left: 10px;
+  margin-top: -10px;
 }
 
 #side-title a img{
@@ -104,4 +114,46 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.collapsed-sidebar{
+  height: 100vh;
+  width: 5vw;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
+  background-color: #ff6c22;
+}
+
+.sidebar-expand{
+  left: 5vw;
+}
+.side-profile:hover{
+  margin-bottom: 10px;
+}
+
+.cogro-title{
+  color: black;
+  transition-duration: 0.3s;
+  font-family: 'Quicksand';
+  font-weight: 600;
+}
+
+.cogro-title:hover{
+  letter-spacing: 5px;
+}
+
+#sd-slogan{
+  position: fixed;
+  top: 50px;
+  left: 65px;
+  color: #12191d;
+}
+.side-logo{
+  transition-duration: 0.3s;
+}
+.side-logo:hover{
+  transform: rotate(360deg);
+  scale: 125%;
 }
