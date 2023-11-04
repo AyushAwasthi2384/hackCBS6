@@ -7,21 +7,20 @@ function Sidebar() {
     <div>
       <navbar className="sidebar">
         <div className="side-list">
-          <a href="#"><img src={require('./Assets/temp-img.png')} /> <span>Profile</span></a>
           <ul className="side-links">
-            <li><a href="#"><img src={require('./Assets/temp-img.png')} /> CoGro</a></li>
-            <li><a href="#"><AiOutlineSearch /> <span>Search</span></a></li>
-            <li><a href="#"><AiFillMessage /> <span>Inbox</span></a></li>
-            <li><a href="#"><AiFillPhone /> <span>Contact</span></a></li>
+            <li id="side-title"><a href="#"><img src={require('./Assets/cogro-logo.png')} /> <span>CoGro</span></a></li>
+            <li><a href="#"><AiOutlineSearch /> <span id="sl-label">Search</span></a></li>
+            <li><a href="#"><AiFillMessage /> <span id="sl-label">Inbox</span></a></li>
+            <li><a href="#"><AiFillPhone /> <span id="sl-label">Contact</span></a></li>
           </ul>
         </div>
 
         <div className="side-low">
-          <span className="sidebar-expand"><AiOutlineRight /></span>
-          <span className="sidebar-Collapse"><AiOutlineLeft /></span>
+          <a href="#"><div className="profile-side-mein"><img className="side-profile" src={require('./Assets/temp-img.png')} /> <div className="profile-name"><abbr title="Your Instagram Username"><span id="sd-username">@username</span></abbr></div></div></a>
+          <span className="sd-arr sidebar-expand"><AiOutlineRight /></span>
+          <span className="sd-arr sidebar-Collapse"><AiOutlineLeft /></span>
           <ul className="side-links" id="below-links">
-            
-            <li><a href="#"><AiFillSetting /> <span>Settings</span></a></li>
+            <li><a href="#"><AiFillSetting /> <span id="sl-label">Settings</span></a></li>
           </ul>
         </div>
 
