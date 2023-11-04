@@ -6,7 +6,7 @@ import { AiFillInfoCircle, AiFillMessage, AiFillPhone, AiFillSetting, AiOutlineL
 function Sidebar() {
 
   return (
-    <div>
+    <div className="sidebar-main">
       
       <navbar className="sidebar">
         <div className="side-list">

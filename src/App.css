@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@400;700&family=Unbounded:wght@200;400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@400;700&family=Unbounded:wght@200;400;600;900&family=Oswald&display=swap');
 
 *{
   box-sizing: border-box;
@@ -10,7 +10,9 @@ body{
   background-color: #12191d;
   font-family: 'Poppins', sans-serif;
 }
-
+.sidebar-main{
+  position: fixed;
+}
 .sidebar{
   height: 100vh;
   width: 15vw;
@@ -135,7 +137,7 @@ a{
 .cogro-title{
   color: black;
   transition-duration: 0.3s;
-  font-family: 'Quicksand';
+  /* font-family: 'Quicksand'; */
   font-weight: 600;
 }
 
@@ -155,4 +157,97 @@ a{
 .side-logo:hover{
   transform: rotate(360deg);
   scale: 125%;
+}
+
+
+
+
+
+.regi{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app{
+  width: 85vw;
+  float: right;
+
+  height: 100vh;
+}
+
+.form-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  height: 70vh;
+  border-left: 2px solid black;
+  width: 25vw;
+}
+#form-login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  height: 50vh;
+  border-left: 2px solid black;
+  width: 25vw;
+  display: flex;
+  justify-content: space-around;
+}
+.form{
+  width: 50vw;
+  background-color: #fff;
+  display: flex;
+  border-radius: 30px;
+
+}
+.form h1{
+  color: #ff6c22;
+}
+
+.regi-image{
+  width: 25vw;
+  background-image: url("./Components/Assets/regi-bg.jpg");
+  background-position: right;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.form-main{
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-main input{
+  outline: none;
+  width: 70%;
+  padding: 9px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 2px 0px #000;
+}
+
+.form-main button{
+  cursor: pointer;
+  padding: 8px 19px;
+  border-radius: 50px;
+  border: none;
+  background-color: #ff6c22;
+  transition-duration: 0.3s;
+}
+.form-main button:hover{
+  box-shadow: 0px 0px 10px 1px #ff6c22;
+  scale: 105%;
+}
+.regi-end-span{
+  font-size: .8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-switch-l{
+  color: rgb(0, 0, 105)  ;
 }

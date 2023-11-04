@@ -1,0 +1,30 @@
+.about, .home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.cogro, .heading-home{
+    font-size: 38px;
+    color: #ff6c22;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.headings
+{
+    color: #ff6c22;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.textt, .text-home
+{
+    color: aliceblue;
+    font-family: "Poppins";
+    font-weight: 400;
+}
