@@ -7,6 +7,7 @@ function Sidebar() {
 
   return (
     <div>
+      
       <navbar className="sidebar">
         <div className="side-list">
           <ul className="side-links">
