@@ -15,7 +15,7 @@ function Register() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
-
+    const [interests,setInterests] = useState("");
     function validateForm() {
 
         //checking if the value is entered
@@ -103,7 +103,7 @@ function Register() {
                         <input
                             type="text"
                             name="fname"
-                            placeholder="Firstname"
+                            placeholder="First name"
                             value={firstname}
                             onChange={(e) => setFirstname(e.target.value)}
                             required
@@ -111,7 +111,7 @@ function Register() {
                         <input
                             type="text"
                             name="lname"
-                            placeholder="Lastname"
+                            placeholder="Last name"
                             value={lastname}
                             onChange={(e) => setLastname(e.target.value)}
                             required
@@ -124,14 +124,7 @@ function Register() {
                             onChange={(e) => setEmail(e.target.value)}
                             required
                         />
-                        <input
-                            type="text"
-                            name="lname"
-                            placeholder="Instagram Handle"
-                            value={instagram}
-                            onChange={(e) => setInstagram(e.target.value)}
-                            required
-                        />
+                        
                         <input
                             type="password"
                             name="password"
@@ -146,6 +139,21 @@ function Register() {
                             placeholder="Confirm Password"
                             value={confirmPassword}
                             onChange={(e) => setConfirmPassword(e.target.value)}
+                            required
+                        /><input
+                            type="text"
+                            name="instagram"
+                            placeholder="Instagram Handle"
+                            value={instagram}
+                            onChange={(e) => setInstagram(e.target.value)}
+                            required
+                        />
+                        <input
+                            type="text-area"
+                            name="interests"
+                            placeholder="Your Description in around 100 words"
+                            value={interests}
+                            onChange={(e) => setInterests(e.target.value)}
                             required
                         />
                         <span className='regi-end-span'>

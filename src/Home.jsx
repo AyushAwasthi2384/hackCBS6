@@ -8,6 +8,7 @@ function Home() {
             <Sidebar />
             <div className='app home'>
                 <h1 className="heading-home">CoGro - Collaboration, Connect, and Grow.</h1>
+                <span className='home-banner'></span>
                 <span className='text-home'>
                 The ascent of social media is directly linked to the exponential surge in content creation. What was once merely a pastime or hobby has now evolved into a full-fledged profession for many. 
 

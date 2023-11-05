@@ -50,14 +50,7 @@ function Login() {
                             onChange={(e) => setPassword(e.target.value)}
                             required
                         />
-                        <input
-                            type="password"
-                            name="confirmPassword"
-                            placeholder="Confirm Password"
-                            value={confirmPassword}
-                            onChange={(e) => setConfirmPassword(e.target.value)}
-                            required
-                        />
+                        
                         <span className='regi-end-span'>
                             <button type="submit">Login</button><br />
                             <div className='alrdy-login'>Yet not registered? <Link className='login-switch-l' to={"/register"}>Hurry!.. Click here</Link></div>
