@@ -10,7 +10,7 @@ function Contact() {
             <Sidebar/>
             <div className='app contact'>
                 <h1 className='heading-c'>
-                    Contact Us:
+                    Contact us:
                 </h1>
                 <a className="phone-c" href="tel:+918303996674">
                     Team Lead: +91 8303996674
