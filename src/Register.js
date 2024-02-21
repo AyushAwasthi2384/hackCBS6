@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Sidebar from './Components/Sidebar';
 import { Link } from 'react-router-dom';
-
+ 
 function Register() {
     // const [email, setEmail] = useState('');
     // const [password, setPassword] = useState('');
